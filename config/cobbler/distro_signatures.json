@@ -673,7 +673,6 @@
           ]
         }
       },
-
       "cloudlinux6": {
         "signatures": [
           "Packages"
@@ -2661,9 +2660,29 @@
         ]
       }
     },
-    "unix": {
-    },
-    "windows": {
+    "unix": {},
+    "windows": {},
+    "rancheros": {
+      "1.5.5": {
+        "signatures": [
+          "boot"
+        ],
+        "version_file": "linux-current.cfg",
+        "version_file_regex": "DEFAULT rancheros-v1.5.5",
+        "kernel_arch": null,
+        "kernel_arch_regex": null,
+        "supported_arches": [
+          "amd64"
+        ],
+        "supported_repo_breeds": [],
+        "kernel_file": "vmlinuz(.*)-rancher",
+        "initrd_file": "initrd(.*)",
+        "isolinux_ok": false,
+        "default_autoinstall": "",
+        "kernel_options": "rancher.autologin=tty1 rancher.autologin=ttyS0 rancher.autologin=ttyS1 console=tty1 console=ttyS0 console=ttyS1 printk.devkmsg=on panic=10",
+        "kernel_options_post": "",
+        "boot_files": []
+      }
     },
     "powerkvm": {
       "2.1": {
